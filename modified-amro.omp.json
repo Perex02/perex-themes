@@ -1,5 +1,10 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "transient_prompt": {
+      "background": "transparent",
+      "foreground": "#CD4277",
+      "template": "# "
+  },
   "blocks": [
     {
       "alignment": "left",
@@ -7,7 +12,7 @@
         {
           "foreground": "#45F1C2",
           "style": "plain",
-          "template": "\ueb99 {{ .UserName }} on",
+          "template": "\u001b[1m\ueb99 {{ .UserName }}\u001b[0m",
           "type": "session"
         },
         {
